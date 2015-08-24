@@ -66,6 +66,7 @@
             this.textBox2.Size = new System.Drawing.Size(168, 24);
             this.textBox2.TabIndex = 3;
             this.toolTip1.SetToolTip(this.textBox2, "Username");
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // label2
             // 
