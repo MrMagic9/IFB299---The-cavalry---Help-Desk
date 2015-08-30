@@ -17,9 +17,65 @@ namespace Helpdesk
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            username_textBox.ResetText();
+            password_textBox.ResetText();
+            login_button.Enabled = false;
+            username_textBox.Focus();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void username_textBox_TextChanged(object sender, EventArgs e)
+        {
+            login_button_enabled_disabled();
+        }
+
+        private void password_textBox_TextChanged(object sender, EventArgs e)
+        {
+            login_button_enabled_disabled();
+        }
+
+        private void login_button_Click(object sender, EventArgs e)
+        {
+            login_error_check();
+        }
+
+        private void login_button_enabled_disabled()
+        {
+            if (username_textBox.Text == "" && password_textBox.Text == "")
+            {
+                login_button.Enabled = false;
+            }
+            else if (username_textBox.Text != "" && password_textBox.Text != "")
+            {
+                login_button.Enabled = true;
+            }
+        }
+
+        private void login_error_check()
+        {
+            if (username_textBox.Text == "")
+            {
+                MessageBox.Show("No username has been entered. Please enter your username.");
+            }
+            else if(password_textBox.Text == "")
+            {
+                MessageBox.Show("No password has been entered. Please enter your password.");
+            }
+            else if(username_textBox.Text == "" && password_textBox.Text == "")
+            {
+                MessageBox.Show("No username or password has been entered. Please enter your username and password.");
+            }
         }
     }
 }
