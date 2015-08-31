@@ -76,6 +76,20 @@ namespace Helpdesk
             {
                 MessageBox.Show("No username or password has been entered. Please enter your username and password.");
             }
+            else if (manager_radioButton.Checked == false || volunteer_radioButton.Checked == false)
+            {
+                MessageBox.Show("No role has been selected. Please select whether you are a manager or volunteer.");
+            }
+        }
+
+        private void manager_radioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void volunteer_radioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

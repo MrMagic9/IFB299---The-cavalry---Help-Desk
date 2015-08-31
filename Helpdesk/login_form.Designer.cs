@@ -38,11 +38,11 @@
             this.login_button = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.volunteer_radioButton = new System.Windows.Forms.RadioButton();
+            this.manager_radioButton = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -129,6 +129,13 @@
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -138,17 +145,10 @@
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.volunteer_radioButton);
+            this.groupBox1.Controls.Add(this.manager_radioButton);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(121, 271);
             this.groupBox1.Name = "groupBox1";
@@ -157,29 +157,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Role";
             // 
-            // radioButton1
+            // volunteer_radioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(50, 18);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(84, 22);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Manager";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.volunteer_radioButton.AutoSize = true;
+            this.volunteer_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.volunteer_radioButton.Location = new System.Drawing.Point(154, 18);
+            this.volunteer_radioButton.Name = "volunteer_radioButton";
+            this.volunteer_radioButton.Size = new System.Drawing.Size(88, 22);
+            this.volunteer_radioButton.TabIndex = 1;
+            this.volunteer_radioButton.TabStop = true;
+            this.volunteer_radioButton.Text = "Volunteer";
+            this.volunteer_radioButton.UseVisualStyleBackColor = true;
+            this.volunteer_radioButton.CheckedChanged += new System.EventHandler(this.volunteer_radioButton_CheckedChanged);
             // 
-            // radioButton2
+            // manager_radioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(154, 18);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(88, 22);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Volunteer";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.manager_radioButton.AutoSize = true;
+            this.manager_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manager_radioButton.Location = new System.Drawing.Point(50, 18);
+            this.manager_radioButton.Name = "manager_radioButton";
+            this.manager_radioButton.Size = new System.Drawing.Size(84, 22);
+            this.manager_radioButton.TabIndex = 0;
+            this.manager_radioButton.TabStop = true;
+            this.manager_radioButton.Text = "Manager";
+            this.manager_radioButton.UseVisualStyleBackColor = true;
+            this.manager_radioButton.CheckedChanged += new System.EventHandler(this.manager_radioButton_CheckedChanged);
             // 
             // login_form
             // 
@@ -196,7 +198,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "login_form";
-            this.Text = "Helpdesk";
+            this.Text = "Helpdesk Login";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -220,8 +222,8 @@
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton volunteer_radioButton;
+        private System.Windows.Forms.RadioButton manager_radioButton;
     }
 }
 
