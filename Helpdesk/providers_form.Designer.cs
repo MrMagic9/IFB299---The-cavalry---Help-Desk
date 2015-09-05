@@ -31,6 +31,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backToMainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.service_comboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.details_listBox = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,11 +63,51 @@
             this.backToMainMenuToolStripMenuItem.Text = "Back to Main Menu";
             this.backToMainMenuToolStripMenuItem.Click += new System.EventHandler(this.backToMainMenuToolStripMenuItem_Click);
             // 
+            // service_comboBox
+            // 
+            this.service_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service_comboBox.FormattingEnabled = true;
+            this.service_comboBox.Items.AddRange(new object[] {
+            "Carpenter",
+            "Electrical",
+            "Locksmith",
+            "Plumber",
+            "Roof Tiler",
+            "Technician"});
+            this.service_comboBox.Location = new System.Drawing.Point(152, 75);
+            this.service_comboBox.Name = "service_comboBox";
+            this.service_comboBox.Size = new System.Drawing.Size(163, 24);
+            this.service_comboBox.TabIndex = 10;
+            this.service_comboBox.SelectedIndexChanged += new System.EventHandler(this.service_comboBox_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(149, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(223, 18);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Please select the type of service:";
+            // 
+            // details_listBox
+            // 
+            this.details_listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.details_listBox.FormattingEnabled = true;
+            this.details_listBox.ItemHeight = 16;
+            this.details_listBox.Location = new System.Drawing.Point(75, 129);
+            this.details_listBox.Name = "details_listBox";
+            this.details_listBox.Size = new System.Drawing.Size(365, 292);
+            this.details_listBox.TabIndex = 12;
+            // 
             // providers_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 473);
+            this.Controls.Add(this.details_listBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.service_comboBox);
             this.Controls.Add(this.menuStrip1);
             this.Name = "providers_form";
             this.Text = "Providers";
@@ -80,5 +123,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backToMainMenuToolStripMenuItem;
+        private System.Windows.Forms.ComboBox service_comboBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox details_listBox;
     }
 }
