@@ -63,6 +63,7 @@
             this.providers_button.TabIndex = 8;
             this.providers_button.Text = "Providers";
             this.providers_button.UseVisualStyleBackColor = true;
+            this.providers_button.Click += new System.EventHandler(this.providers_button_Click);
             // 
             // tasks_button
             // 
@@ -73,6 +74,7 @@
             this.tasks_button.TabIndex = 9;
             this.tasks_button.Text = "Tasks";
             this.tasks_button.UseVisualStyleBackColor = true;
+            this.tasks_button.Click += new System.EventHandler(this.tasks_button_Click);
             // 
             // forum_button
             // 
@@ -83,6 +85,7 @@
             this.forum_button.TabIndex = 10;
             this.forum_button.Text = "Forum";
             this.forum_button.UseVisualStyleBackColor = true;
+            this.forum_button.Click += new System.EventHandler(this.forum_button_Click);
             // 
             // main_form
             // 
@@ -95,6 +98,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "main_form";
             this.Text = "Welcome to Helpdesk!";
+            this.Load += new System.EventHandler(this.main_form_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

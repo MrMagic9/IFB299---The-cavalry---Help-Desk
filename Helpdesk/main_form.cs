@@ -20,6 +20,27 @@ namespace Helpdesk
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Open login_form
+            this.Close();
+        }
+
+        private void main_form_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tasks_button_Click(object sender, EventArgs e)
+        {
+            new tasks_form().Show();
+        }
+
+        private void providers_button_Click(object sender, EventArgs e)
+        {
+            new providers_form().Show();
+        }
+
+        private void forum_button_Click(object sender, EventArgs e)
+        {
+            new forum_form().Show();
         }
     }
 }

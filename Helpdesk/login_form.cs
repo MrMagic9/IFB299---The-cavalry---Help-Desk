@@ -19,12 +19,7 @@ namespace Helpdesk
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            username_textBox.ResetText();
-            password_textBox.ResetText();
-            login_button.Enabled = false;
-            username_textBox.Focus();
-            manager_radioButton.Checked = false;
-            volunteer_radioButton.Checked = false;
+            login_form_reset();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -86,7 +81,18 @@ namespace Helpdesk
             {
                 //open main_form
                 MessageBox.Show("Login Successful!");
+                new main_form().Show();
             }
+        }
+
+        private void login_form_reset()
+        {
+            username_textBox.ResetText();
+            password_textBox.ResetText();
+            login_button.Enabled = false;
+            username_textBox.Focus();
+            manager_radioButton.Checked = false;
+            volunteer_radioButton.Checked = false;
         }
 
         private void manager_radioButton_CheckedChanged(object sender, EventArgs e)

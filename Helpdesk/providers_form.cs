@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Helpdesk
 {
-    public partial class tasks_form : Form
+    public partial class providers_form : Form
     {
-        public tasks_form()
+        public providers_form()
         {
             InitializeComponent();
         }
