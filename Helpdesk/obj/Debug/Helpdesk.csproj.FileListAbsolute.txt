@@ -41,3 +41,4 @@ C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---Th
 C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.Properties.Resources.resources
 C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.csproj.GenerateResource.Cache
 C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.main_form.resources
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.tasks_form.resources

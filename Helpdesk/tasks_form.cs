@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Helpdesk
 {
-    public partial class main_form : Form
+    public partial class tasks_form : Form
     {
-        public main_form()
+        public tasks_form()
         {
             InitializeComponent();
-        }
-
-        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Open login_form
         }
     }
 }

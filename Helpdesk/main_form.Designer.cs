@@ -30,9 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.providers_button = new System.Windows.Forms.Button();
+            this.tasks_button = new System.Windows.Forms.Button();
+            this.forum_button = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,45 +52,46 @@
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
-            // button1
+            // providers_button
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(192, 179);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 55);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Providers";
-            this.button1.UseVisualStyleBackColor = true;
+            this.providers_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.providers_button.Location = new System.Drawing.Point(192, 193);
+            this.providers_button.Name = "providers_button";
+            this.providers_button.Size = new System.Drawing.Size(129, 55);
+            this.providers_button.TabIndex = 8;
+            this.providers_button.Text = "Providers";
+            this.providers_button.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // tasks_button
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(192, 102);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 55);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Tasks";
-            this.button2.UseVisualStyleBackColor = true;
+            this.tasks_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tasks_button.Location = new System.Drawing.Point(192, 92);
+            this.tasks_button.Name = "tasks_button";
+            this.tasks_button.Size = new System.Drawing.Size(129, 55);
+            this.tasks_button.TabIndex = 9;
+            this.tasks_button.Text = "Tasks";
+            this.tasks_button.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // forum_button
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(192, 257);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 55);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Forum";
-            this.button3.UseVisualStyleBackColor = true;
+            this.forum_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forum_button.Location = new System.Drawing.Point(192, 297);
+            this.forum_button.Name = "forum_button";
+            this.forum_button.Size = new System.Drawing.Size(129, 55);
+            this.forum_button.TabIndex = 10;
+            this.forum_button.Text = "Forum";
+            this.forum_button.UseVisualStyleBackColor = true;
             // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 473);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.forum_button);
+            this.Controls.Add(this.tasks_button);
+            this.Controls.Add(this.providers_button);
             this.Controls.Add(this.menuStrip1);
             this.Name = "main_form";
             this.Text = "Welcome to Helpdesk!";
@@ -105,8 +106,8 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button providers_button;
+        private System.Windows.Forms.Button tasks_button;
+        private System.Windows.Forms.Button forum_button;
     }
 }

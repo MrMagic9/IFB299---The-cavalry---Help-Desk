@@ -23,6 +23,8 @@ namespace Helpdesk
             password_textBox.ResetText();
             login_button.Enabled = false;
             username_textBox.Focus();
+            manager_radioButton.Checked = false;
+            volunteer_radioButton.Checked = false;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,7 +49,7 @@ namespace Helpdesk
 
         private void login_button_Click(object sender, EventArgs e)
         {
-            login_error_check();
+            login_details_check();
         }
 
         private void login_button_enabled_disabled()
@@ -62,7 +64,7 @@ namespace Helpdesk
             }
         }
 
-        private void login_error_check()
+        private void login_details_check()
         {
             if (username_textBox.Text == "")
             {
@@ -76,9 +78,14 @@ namespace Helpdesk
             {
                 MessageBox.Show("No username or password has been entered. Please enter your username and password.");
             }
-            else if (manager_radioButton.Checked == false || volunteer_radioButton.Checked == false)
+            else if (manager_radioButton.Checked == false && volunteer_radioButton.Checked == false)
             {
                 MessageBox.Show("No role has been selected. Please select whether you are a manager or volunteer.");
+            }
+            else
+            {
+                //open main_form
+                MessageBox.Show("Login Successful!");
             }
         }
 
