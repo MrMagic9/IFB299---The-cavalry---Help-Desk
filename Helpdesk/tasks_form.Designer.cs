@@ -29,29 +29,23 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backToMainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tasks_checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.clear_button = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logoutToolStripMenuItem,
             this.backToMainMenuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(537, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.logoutToolStripMenuItem.Text = "Logout";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // backToMainMenuToolStripMenuItem
             // 
@@ -60,14 +54,63 @@
             this.backToMainMenuToolStripMenuItem.Text = "Back to Main Menu";
             this.backToMainMenuToolStripMenuItem.Click += new System.EventHandler(this.backToMainMenuToolStripMenuItem_Click);
             // 
+            // tasks_checkedListBox
+            // 
+            this.tasks_checkedListBox.CheckOnClick = true;
+            this.tasks_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tasks_checkedListBox.FormattingEnabled = true;
+            this.tasks_checkedListBox.HorizontalScrollbar = true;
+            this.tasks_checkedListBox.Location = new System.Drawing.Point(45, 80);
+            this.tasks_checkedListBox.Name = "tasks_checkedListBox";
+            this.tasks_checkedListBox.ScrollAlwaysVisible = true;
+            this.tasks_checkedListBox.Size = new System.Drawing.Size(440, 293);
+            this.tasks_checkedListBox.TabIndex = 13;
+            this.tasks_checkedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.tasks_checkedListBox_ItemCheck);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(239, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Tasks";
+            // 
+            // clear_button
+            // 
+            this.clear_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_button.Location = new System.Drawing.Point(176, 421);
+            this.clear_button.Name = "clear_button";
+            this.clear_button.Size = new System.Drawing.Size(173, 40);
+            this.clear_button.TabIndex = 14;
+            this.clear_button.Text = "Clear Completed Tasks";
+            this.clear_button.UseVisualStyleBackColor = true;
+            this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(189, 387);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(141, 18);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Completed Tasks: 0";
+            // 
             // tasks_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 473);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.clear_button);
+            this.Controls.Add(this.tasks_checkedListBox);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.Name = "tasks_form";
             this.Text = "Tasks";
+            this.Load += new System.EventHandler(this.tasks_form_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -78,7 +121,10 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backToMainMenuToolStripMenuItem;
+        private System.Windows.Forms.CheckedListBox tasks_checkedListBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button clear_button;
+        private System.Windows.Forms.Label label4;
     }
 }

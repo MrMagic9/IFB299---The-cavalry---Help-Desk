@@ -19,11 +19,6 @@ namespace Helpdesk
 
         private void backToMainMenuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new main_form().Show();
-        }
-
-        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
             this.Close();
         }
     }
