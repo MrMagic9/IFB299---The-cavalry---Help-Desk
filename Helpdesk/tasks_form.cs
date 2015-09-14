@@ -50,5 +50,17 @@ namespace Helpdesk
             int completed_tasks = checkedItems.Count+1;
             label4.Text = "Completed Tasks: " + completed_tasks;
         }
+
+        private void addtask_textBox_TextChanged(object sender, EventArgs e)
+        {
+            add_button.Enabled = true;
+        }
+
+        private void add_button_Click(object sender, EventArgs e)
+        {
+            tasks_checkedListBox.Items.Add(addtask_textBox.Text);
+            addtask_textBox.Text = "";
+            add_button.Enabled = false;
+        }
     }
 }

@@ -34,10 +34,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.clear_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addtask_textBox = new System.Windows.Forms.TextBox();
+            this.add_button = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.taskurgency = new System.Windows.Forms.DataGridViewImageColumn();
+            this.checkboxcolumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.taskdescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.taskstatus = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -63,10 +69,10 @@
             this.tasks_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tasks_checkedListBox.FormattingEnabled = true;
             this.tasks_checkedListBox.HorizontalScrollbar = true;
-            this.tasks_checkedListBox.Location = new System.Drawing.Point(45, 80);
+            this.tasks_checkedListBox.Location = new System.Drawing.Point(51, 78);
             this.tasks_checkedListBox.Name = "tasks_checkedListBox";
             this.tasks_checkedListBox.ScrollAlwaysVisible = true;
-            this.tasks_checkedListBox.Size = new System.Drawing.Size(440, 225);
+            this.tasks_checkedListBox.Size = new System.Drawing.Size(401, 225);
             this.tasks_checkedListBox.TabIndex = 13;
             this.tasks_checkedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.tasks_checkedListBox_ItemCheck);
             // 
@@ -83,7 +89,7 @@
             // clear_button
             // 
             this.clear_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clear_button.Location = new System.Drawing.Point(279, 421);
+            this.clear_button.Location = new System.Drawing.Point(179, 421);
             this.clear_button.Name = "clear_button";
             this.clear_button.Size = new System.Drawing.Size(173, 40);
             this.clear_button.TabIndex = 14;
@@ -101,45 +107,83 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Completed Tasks: 0";
             // 
-            // button1
+            // addtask_textBox
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(77, 421);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 40);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Add a Task";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addtask_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addtask_textBox.Location = new System.Drawing.Point(167, 335);
+            this.addtask_textBox.Name = "addtask_textBox";
+            this.addtask_textBox.Size = new System.Drawing.Size(173, 22);
+            this.addtask_textBox.TabIndex = 18;
+            this.addtask_textBox.TextChanged += new System.EventHandler(this.addtask_textBox_TextChanged);
             // 
-            // textBox1
+            // add_button
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(117, 335);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 22);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.Visible = false;
+            this.add_button.Enabled = false;
+            this.add_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_button.Location = new System.Drawing.Point(356, 325);
+            this.add_button.Name = "add_button";
+            this.add_button.Size = new System.Drawing.Size(68, 40);
+            this.add_button.TabIndex = 19;
+            this.add_button.Text = "Add";
+            this.add_button.UseVisualStyleBackColor = true;
+            this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
-            // button2
+            // label1
             // 
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(306, 325);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 40);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(75, 335);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 18);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Add a Task:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.taskurgency,
+            this.checkboxcolumn,
+            this.taskdescription,
+            this.taskstatus});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 113);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(525, 150);
+            this.dataGridView1.TabIndex = 21;
+            // 
+            // taskurgency
+            // 
+            this.taskurgency.HeaderText = "Urgency";
+            this.taskurgency.Name = "taskurgency";
+            this.taskurgency.Width = 50;
+            // 
+            // checkboxcolumn
+            // 
+            this.checkboxcolumn.HeaderText = "";
+            this.checkboxcolumn.Name = "checkboxcolumn";
+            this.checkboxcolumn.Width = 30;
+            // 
+            // taskdescription
+            // 
+            this.taskdescription.HeaderText = "Description";
+            this.taskdescription.Name = "taskdescription";
+            this.taskdescription.Width = 250;
+            // 
+            // taskstatus
+            // 
+            this.taskstatus.HeaderText = "Status";
+            this.taskstatus.Name = "taskstatus";
+            this.taskstatus.Width = 150;
             // 
             // tasks_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 473);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.add_button);
+            this.Controls.Add(this.addtask_textBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.clear_button);
             this.Controls.Add(this.tasks_checkedListBox);
@@ -150,6 +194,7 @@
             this.Load += new System.EventHandler(this.tasks_form_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,8 +208,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button clear_button;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox addtask_textBox;
+        private System.Windows.Forms.Button add_button;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewImageColumn taskurgency;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn checkboxcolumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn taskdescription;
+        private System.Windows.Forms.DataGridViewComboBoxColumn taskstatus;
     }
 }
