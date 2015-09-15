@@ -208,17 +208,31 @@ namespace Helpdesk
             if (status_index == 0)
             {
                 pictureBox1.BackColor = Color.Red;
+                checkBox1.Checked = false;
             }
             else if (status_index == 1)
             {
                 pictureBox1.BackColor = Color.Orange;
+                checkBox1.Checked = false;
             }
             else if (status_index == 2)
             {
-                pictureBox1.BackColor = Color.Green;
+                pictureBox1.BackColor = Color.Blue;
+                checkBox1.Checked = false;
             }
-            else
+            else if (status_index == 3)
             {
+                pictureBox1.BackColor = Color.Green;
+                checkBox1.Checked = true;
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = 3;
+            if (checkBox1.Checked == false)
+            {
+                comboBox1.ResetText();
                 pictureBox1.BackColor = Color.Empty;
             }
         }

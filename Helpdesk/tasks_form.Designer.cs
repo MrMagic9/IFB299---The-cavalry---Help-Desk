@@ -173,7 +173,8 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox1.Location = new System.Drawing.Point(415, 78);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(110, 21);
@@ -313,6 +314,7 @@
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 35;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // textBox1
             // 
