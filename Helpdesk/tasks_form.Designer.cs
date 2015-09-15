@@ -105,6 +105,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(537, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // backToMainMenuToolStripMenuItem
             // 
@@ -147,16 +148,19 @@
             // 
             // comboBox12
             // 
+            this.comboBox12.Enabled = false;
             this.comboBox12.FormattingEnabled = true;
             this.comboBox12.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox12.Location = new System.Drawing.Point(415, 372);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(110, 21);
             this.comboBox12.TabIndex = 21;
             this.comboBox12.Visible = false;
+            this.comboBox12.SelectedIndexChanged += new System.EventHandler(this.comboBox12_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -169,6 +173,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Critical",
@@ -183,68 +188,83 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox2.Location = new System.Drawing.Point(415, 106);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(110, 21);
             this.comboBox2.TabIndex = 24;
             this.comboBox2.Visible = false;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox3
             // 
+            this.comboBox3.Enabled = false;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox3.Location = new System.Drawing.Point(415, 133);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(110, 21);
             this.comboBox3.TabIndex = 25;
             this.comboBox3.Visible = false;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox4
             // 
+            this.comboBox4.Enabled = false;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox4.Location = new System.Drawing.Point(415, 160);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(110, 21);
             this.comboBox4.TabIndex = 26;
             this.comboBox4.Visible = false;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // comboBox5
             // 
+            this.comboBox5.Enabled = false;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox5.Location = new System.Drawing.Point(415, 187);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(110, 21);
             this.comboBox5.TabIndex = 27;
             this.comboBox5.Visible = false;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
             // comboBox6
             // 
+            this.comboBox6.Enabled = false;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox6.Location = new System.Drawing.Point(415, 213);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(110, 21);
             this.comboBox6.TabIndex = 28;
             this.comboBox6.Visible = false;
+            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
@@ -309,6 +329,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Enabled = false;
             this.checkBox1.Location = new System.Drawing.Point(66, 81);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
@@ -322,6 +343,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(321, 20);
             this.textBox1.TabIndex = 36;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -330,16 +352,19 @@
             this.textBox2.Size = new System.Drawing.Size(321, 20);
             this.textBox2.TabIndex = 38;
             this.textBox2.Visible = false;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Enabled = false;
             this.checkBox2.Location = new System.Drawing.Point(66, 109);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 37;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.Visible = false;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // textBox4
             // 
@@ -348,16 +373,19 @@
             this.textBox4.Size = new System.Drawing.Size(321, 20);
             this.textBox4.TabIndex = 42;
             this.textBox4.Visible = false;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
+            this.checkBox4.Enabled = false;
             this.checkBox4.Location = new System.Drawing.Point(66, 164);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(15, 14);
             this.checkBox4.TabIndex = 41;
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.Visible = false;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // textBox3
             // 
@@ -366,16 +394,19 @@
             this.textBox3.Size = new System.Drawing.Size(321, 20);
             this.textBox3.TabIndex = 40;
             this.textBox3.Visible = false;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Enabled = false;
             this.checkBox3.Location = new System.Drawing.Point(66, 136);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 39;
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.Visible = false;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // textBox7
             // 
@@ -384,16 +415,19 @@
             this.textBox7.Size = new System.Drawing.Size(321, 20);
             this.textBox7.TabIndex = 48;
             this.textBox7.Visible = false;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
+            this.checkBox7.Enabled = false;
             this.checkBox7.Location = new System.Drawing.Point(66, 245);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(15, 14);
             this.checkBox7.TabIndex = 47;
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.Visible = false;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // textBox6
             // 
@@ -402,16 +436,19 @@
             this.textBox6.Size = new System.Drawing.Size(321, 20);
             this.textBox6.TabIndex = 46;
             this.textBox6.Visible = false;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
+            this.checkBox6.Enabled = false;
             this.checkBox6.Location = new System.Drawing.Point(66, 217);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(15, 14);
             this.checkBox6.TabIndex = 45;
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.Visible = false;
+            this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // textBox5
             // 
@@ -420,16 +457,19 @@
             this.textBox5.Size = new System.Drawing.Size(321, 20);
             this.textBox5.TabIndex = 44;
             this.textBox5.Visible = false;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
+            this.checkBox5.Enabled = false;
             this.checkBox5.Location = new System.Drawing.Point(66, 190);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(15, 14);
             this.checkBox5.TabIndex = 43;
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.Visible = false;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // textBox8
             // 
@@ -438,16 +478,19 @@
             this.textBox8.Size = new System.Drawing.Size(321, 20);
             this.textBox8.TabIndex = 52;
             this.textBox8.Visible = false;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
+            this.checkBox8.Enabled = false;
             this.checkBox8.Location = new System.Drawing.Point(66, 271);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(15, 14);
             this.checkBox8.TabIndex = 51;
             this.checkBox8.UseVisualStyleBackColor = true;
             this.checkBox8.Visible = false;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // pictureBox8
             // 
@@ -461,16 +504,19 @@
             // 
             // comboBox7
             // 
+            this.comboBox7.Enabled = false;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox7.Location = new System.Drawing.Point(415, 242);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(110, 21);
             this.comboBox7.TabIndex = 49;
             this.comboBox7.Visible = false;
+            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
             // 
             // textBox9
             // 
@@ -479,16 +525,19 @@
             this.textBox9.Size = new System.Drawing.Size(321, 20);
             this.textBox9.TabIndex = 56;
             this.textBox9.Visible = false;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
+            this.checkBox9.Enabled = false;
             this.checkBox9.Location = new System.Drawing.Point(66, 297);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(15, 14);
             this.checkBox9.TabIndex = 55;
             this.checkBox9.UseVisualStyleBackColor = true;
             this.checkBox9.Visible = false;
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
             // pictureBox9
             // 
@@ -502,16 +551,19 @@
             // 
             // comboBox8
             // 
+            this.comboBox8.Enabled = false;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox8.Location = new System.Drawing.Point(415, 268);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(110, 21);
             this.comboBox8.TabIndex = 53;
             this.comboBox8.Visible = false;
+            this.comboBox8.SelectedIndexChanged += new System.EventHandler(this.comboBox8_SelectedIndexChanged);
             // 
             // textBox10
             // 
@@ -520,16 +572,19 @@
             this.textBox10.Size = new System.Drawing.Size(321, 20);
             this.textBox10.TabIndex = 60;
             this.textBox10.Visible = false;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
+            this.checkBox10.Enabled = false;
             this.checkBox10.Location = new System.Drawing.Point(66, 323);
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(15, 14);
             this.checkBox10.TabIndex = 59;
             this.checkBox10.UseVisualStyleBackColor = true;
             this.checkBox10.Visible = false;
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
             // 
             // pictureBox10
             // 
@@ -543,16 +598,19 @@
             // 
             // comboBox9
             // 
+            this.comboBox9.Enabled = false;
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox9.Location = new System.Drawing.Point(415, 294);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(110, 21);
             this.comboBox9.TabIndex = 57;
             this.comboBox9.Visible = false;
+            this.comboBox9.SelectedIndexChanged += new System.EventHandler(this.comboBox9_SelectedIndexChanged);
             // 
             // textBox11
             // 
@@ -561,16 +619,19 @@
             this.textBox11.Size = new System.Drawing.Size(321, 20);
             this.textBox11.TabIndex = 64;
             this.textBox11.Visible = false;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // checkBox11
             // 
             this.checkBox11.AutoSize = true;
+            this.checkBox11.Enabled = false;
             this.checkBox11.Location = new System.Drawing.Point(66, 349);
             this.checkBox11.Name = "checkBox11";
             this.checkBox11.Size = new System.Drawing.Size(15, 14);
             this.checkBox11.TabIndex = 63;
             this.checkBox11.UseVisualStyleBackColor = true;
             this.checkBox11.Visible = false;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // pictureBox11
             // 
@@ -584,16 +645,19 @@
             // 
             // comboBox10
             // 
+            this.comboBox10.Enabled = false;
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox10.Location = new System.Drawing.Point(415, 320);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(110, 21);
             this.comboBox10.TabIndex = 61;
             this.comboBox10.Visible = false;
+            this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.comboBox10_SelectedIndexChanged);
             // 
             // textBox12
             // 
@@ -602,16 +666,19 @@
             this.textBox12.Size = new System.Drawing.Size(321, 20);
             this.textBox12.TabIndex = 68;
             this.textBox12.Visible = false;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // checkBox12
             // 
             this.checkBox12.AutoSize = true;
+            this.checkBox12.Enabled = false;
             this.checkBox12.Location = new System.Drawing.Point(66, 375);
             this.checkBox12.Name = "checkBox12";
             this.checkBox12.Size = new System.Drawing.Size(15, 14);
             this.checkBox12.TabIndex = 67;
             this.checkBox12.UseVisualStyleBackColor = true;
             this.checkBox12.Visible = false;
+            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
             // pictureBox12
             // 
@@ -625,16 +692,19 @@
             // 
             // comboBox11
             // 
+            this.comboBox11.Enabled = false;
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Items.AddRange(new object[] {
             "Critical",
             "Major",
-            "Minor"});
+            "Minor",
+            "Completed"});
             this.comboBox11.Location = new System.Drawing.Point(415, 346);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(110, 21);
             this.comboBox11.TabIndex = 65;
             this.comboBox11.Visible = false;
+            this.comboBox11.SelectedIndexChanged += new System.EventHandler(this.comboBox11_SelectedIndexChanged);
             // 
             // tasks_form
             // 
