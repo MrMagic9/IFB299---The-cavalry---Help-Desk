@@ -22,3 +22,25 @@ C:\Users\Tracey PA\Google Drive\IFB299 Group Project\IFB299---The-cavalry---Help
 C:\Users\Tracey PA\Google Drive\IFB299 Group Project\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.login_form.resources
 C:\Users\Tracey PA\Google Drive\IFB299 Group Project\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.Properties.Resources.resources
 C:\Users\Tracey PA\Google Drive\IFB299 Group Project\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.csproj.GenerateResource.Cache
+C:\Users\Tracey PA\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\bin\Debug\Helpdesk.exe.config
+C:\Users\Tracey PA\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.exe
+C:\Users\Tracey PA\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.pdb
+C:\Users\Tracey PA\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\bin\Debug\Helpdesk.exe
+C:\Users\Tracey PA\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\bin\Debug\Helpdesk.pdb
+C:\Users\Tracey PA\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.csprojResolveAssemblyReference.cache
+C:\Users\Tracey PA\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.login_form.resources
+C:\Users\Tracey PA\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.Properties.Resources.resources
+C:\Users\Tracey PA\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.csproj.GenerateResource.Cache
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\bin\Debug\Helpdesk.exe.config
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\bin\Debug\Helpdesk.exe
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\bin\Debug\Helpdesk.pdb
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.forum_form.resources
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.login_form.resources
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.main_form.resources
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.Properties.Resources.resources
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.providers_form.resources
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.tasks_form.resources
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.csproj.GenerateResource.Cache
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.exe
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.pdb
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.csprojResolveAssemblyReference.cache
