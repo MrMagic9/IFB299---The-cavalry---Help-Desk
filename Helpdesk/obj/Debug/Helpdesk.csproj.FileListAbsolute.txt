@@ -44,3 +44,7 @@ C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---Th
 C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.exe
 C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.pdb
 C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.csprojResolveAssemblyReference.cache
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\bin\Debug\Helpdesk.exe.manifest
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\bin\Debug\Helpdesk.application
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.exe.manifest
+C:\Users\Lachlan\Google Drive\IFB299 Group Project\Github Repository\IFB299---The-cavalry---Help-Desk\Helpdesk\obj\Debug\Helpdesk.application
