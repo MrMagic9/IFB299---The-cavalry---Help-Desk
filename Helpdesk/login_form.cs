@@ -77,11 +77,16 @@ namespace Helpdesk
             {
                 MessageBox.Show("No role has been selected. Please select whether you are a manager or volunteer.");
             }
-            else
+            else if (volunteer_radioButton.Checked == true)
             {
                 //open main_form
                 MessageBox.Show("Login Successful!");
                 new main_form().Show();
+            }
+            else if (manager_radioButton.Checked == true)
+            {
+                MessageBox.Show("Login Successful!");
+                new manager_main().Show();
             }
         }
 

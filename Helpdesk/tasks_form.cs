@@ -733,5 +733,15 @@ namespace Helpdesk
                 pictureBox12.BackColor = Color.Empty;
             }
         }
+
+        private void printToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            printDialog1.ShowDialog();
+        }
+
+        private void printPreviewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.ShowDialog();
+        }
     }
 }
