@@ -90,6 +90,12 @@
     <Compile Include="main_form.Designer.cs">
       <DependentUpon>main_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="manager_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_main.Designer.cs">
+      <DependentUpon>manager_main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="providers_form.cs">
@@ -104,6 +110,12 @@
     <Compile Include="tasks_form.Designer.cs">
       <DependentUpon>tasks_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="volunteers_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="volunteers_details.Designer.cs">
+      <DependentUpon>volunteers_details.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="forum_form.resx">
       <DependentUpon>forum_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="main_form.resx">
       <DependentUpon>main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_main.resx">
+      <DependentUpon>manager_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tasks_form.resx">
       <DependentUpon>tasks_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="volunteers_details.resx">
+      <DependentUpon>volunteers_details.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Helpdesk_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">

@@ -282,5 +282,15 @@ namespace Helpdesk
             service_comboBox.Items.Add("Tiling");
             service_comboBox.Items.Add("Window Repair");
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            printDialog1.ShowDialog();
+        }
+
+        private void printPreviewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.ShowDialog();
+        }
     }
 }
