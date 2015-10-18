@@ -12,6 +12,8 @@ namespace Helpdesk
 {
     public partial class volunteers_details : Form
     {
+        int CALENDAR_COUNTER = 0;
+
         public volunteers_details()
         {
             InitializeComponent();
@@ -39,8 +41,17 @@ namespace Helpdesk
             email_textBox.Text = "";
             details_listBox.Items.Add("Role: " + role_comboBox.SelectedItem);
             role_comboBox.ResetText();
+            details_listBox.Items.Add("Roster:");
+            details_listBox.Items.Add(textBox1.Text);
+            details_listBox.Items.Add(textBox2.Text);
+            details_listBox.Items.Add(textBox3.Text);
             details_listBox.Items.Add("");
-            
+
+            CALENDAR_COUNTER = 0;
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+
         }
 
         private void volunteers_details_Load(object sender, EventArgs e)
@@ -61,6 +72,26 @@ namespace Helpdesk
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            CALENDAR_COUNTER++;
+
+            if (CALENDAR_COUNTER == 1)
+            {
+                textBox1.Text = "" + dateTimePicker1.Value;
+            }
+
+            else if (CALENDAR_COUNTER == 2)
+            {
+                textBox2.Text = "" + dateTimePicker1.Value;
+            }
+
+            else if (CALENDAR_COUNTER == 3)
+            {
+                textBox3.Text = "" + dateTimePicker1.Value;
+            }
         }
     }
 }

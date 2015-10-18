@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(volunteers_details));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backToMainMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.details_listBox = new System.Windows.Forms.ListBox();
             this.add_button = new System.Windows.Forms.Button();
@@ -45,11 +48,13 @@
             this.year_textBox = new System.Windows.Forms.TextBox();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label5 = new System.Windows.Forms.Label();
             this.role_comboBox = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.day_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.month_numeric)).BeginInit();
@@ -65,6 +70,29 @@
             this.menuStrip1.Size = new System.Drawing.Size(537, 24);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.printToolStripMenuItem,
+            this.printPreviewToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.printToolStripMenuItem.Text = "Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
+            // 
+            // printPreviewToolStripMenuItem
+            // 
+            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
+            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.printPreviewToolStripMenuItem.Text = "Print Preview";
+            this.printPreviewToolStripMenuItem.Click += new System.EventHandler(this.printPreviewToolStripMenuItem_Click);
             // 
             // backToMainMenuToolStripMenuItem
             // 
@@ -87,7 +115,7 @@
             // add_button
             // 
             this.add_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_button.Location = new System.Drawing.Point(47, 390);
+            this.add_button.Location = new System.Drawing.Point(46, 418);
             this.add_button.Name = "add_button";
             this.add_button.Size = new System.Drawing.Size(110, 34);
             this.add_button.TabIndex = 17;
@@ -97,7 +125,7 @@
             // 
             // name_textBox
             // 
-            this.name_textBox.Location = new System.Drawing.Point(12, 62);
+            this.name_textBox.Location = new System.Drawing.Point(12, 55);
             this.name_textBox.Name = "name_textBox";
             this.name_textBox.Size = new System.Drawing.Size(100, 20);
             this.name_textBox.TabIndex = 18;
@@ -105,7 +133,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 46);
+            this.label1.Location = new System.Drawing.Point(13, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 19;
@@ -114,7 +142,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 177);
+            this.label2.Location = new System.Drawing.Point(13, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 21;
@@ -122,7 +150,7 @@
             // 
             // phone_textBox
             // 
-            this.phone_textBox.Location = new System.Drawing.Point(12, 193);
+            this.phone_textBox.Location = new System.Drawing.Point(12, 158);
             this.phone_textBox.Name = "phone_textBox";
             this.phone_textBox.Size = new System.Drawing.Size(100, 20);
             this.phone_textBox.TabIndex = 20;
@@ -130,7 +158,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 240);
+            this.label3.Location = new System.Drawing.Point(13, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 23;
@@ -138,7 +166,7 @@
             // 
             // email_textBox
             // 
-            this.email_textBox.Location = new System.Drawing.Point(12, 256);
+            this.email_textBox.Location = new System.Drawing.Point(12, 207);
             this.email_textBox.Name = "email_textBox";
             this.email_textBox.Size = new System.Drawing.Size(100, 20);
             this.email_textBox.TabIndex = 22;
@@ -146,7 +174,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 106);
+            this.label4.Location = new System.Drawing.Point(13, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 13);
             this.label4.TabIndex = 25;
@@ -154,7 +182,7 @@
             // 
             // day_numeric
             // 
-            this.day_numeric.Location = new System.Drawing.Point(16, 123);
+            this.day_numeric.Location = new System.Drawing.Point(16, 106);
             this.day_numeric.Maximum = new decimal(new int[] {
             31,
             0,
@@ -176,7 +204,7 @@
             // 
             // month_numeric
             // 
-            this.month_numeric.Location = new System.Drawing.Point(70, 123);
+            this.month_numeric.Location = new System.Drawing.Point(70, 106);
             this.month_numeric.Maximum = new decimal(new int[] {
             12,
             0,
@@ -198,7 +226,7 @@
             // 
             // year_textBox
             // 
-            this.year_textBox.Location = new System.Drawing.Point(124, 123);
+            this.year_textBox.Location = new System.Drawing.Point(124, 106);
             this.year_textBox.Name = "year_textBox";
             this.year_textBox.Size = new System.Drawing.Size(66, 20);
             this.year_textBox.TabIndex = 28;
@@ -217,33 +245,10 @@
             // 
             this.printDialog1.UseEXDialog = true;
             // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.printToolStripMenuItem,
-            this.printPreviewToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.printToolStripMenuItem.Text = "Print";
-            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
-            // 
-            // printPreviewToolStripMenuItem
-            // 
-            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.printPreviewToolStripMenuItem.Text = "Print Preview";
-            this.printPreviewToolStripMenuItem.Click += new System.EventHandler(this.printPreviewToolStripMenuItem_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 308);
+            this.label5.Location = new System.Drawing.Point(13, 236);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 30;
@@ -255,17 +260,62 @@
             this.role_comboBox.Items.AddRange(new object[] {
             "Manager",
             "Volunteer"});
-            this.role_comboBox.Location = new System.Drawing.Point(16, 324);
+            this.role_comboBox.Location = new System.Drawing.Point(12, 252);
             this.role_comboBox.Name = "role_comboBox";
             this.role_comboBox.Size = new System.Drawing.Size(121, 21);
             this.role_comboBox.TabIndex = 31;
             this.role_comboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 302);
+            this.dateTimePicker1.MinDate = new System.DateTime(2015, 10, 19, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 32;
+            this.dateTimePicker1.Value = new System.DateTime(2015, 10, 19, 0, 0, 0, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 285);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "Roster";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 328);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(198, 20);
+            this.textBox1.TabIndex = 34;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(12, 354);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(198, 20);
+            this.textBox2.TabIndex = 35;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(12, 380);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(198, 20);
+            this.textBox3.TabIndex = 36;
             // 
             // volunteers_details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 473);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.role_comboBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.year_textBox);
@@ -316,5 +366,10 @@
         private System.Windows.Forms.ToolStripMenuItem printPreviewToolStripMenuItem;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox role_comboBox;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

@@ -39,6 +39,7 @@ namespace Helpdesk
                 pictureBox1.BackColor = Color.Empty;
                 checkBox1.Enabled = false;
                 comboBox1.Enabled = false;
+                comboBox13.Enabled = false;
             }
             if (checkBox2.Checked == true)
             {
@@ -48,6 +49,7 @@ namespace Helpdesk
                 pictureBox2.BackColor = Color.Empty;
                 checkBox2.Enabled = false;
                 comboBox2.Enabled = false;
+                comboBox14.Enabled = false;
             }
             if (checkBox3.Checked == true)
             {
@@ -57,6 +59,7 @@ namespace Helpdesk
                 pictureBox3.BackColor = Color.Empty;
                 checkBox3.Enabled = false;
                 comboBox3.Enabled = false;
+                comboBox15.Enabled = false;
             }
             if (checkBox4.Checked == true)
             {
@@ -66,6 +69,7 @@ namespace Helpdesk
                 pictureBox4.BackColor = Color.Empty;
                 checkBox4.Enabled = false;
                 comboBox4.Enabled = false;
+                comboBox16.Enabled = false;
             }
             if (checkBox5.Checked == true)
             {
@@ -75,6 +79,7 @@ namespace Helpdesk
                 pictureBox5.BackColor = Color.Empty;
                 checkBox5.Enabled = false;
                 comboBox5.Enabled = false;
+                comboBox17.Enabled = false;
             }
             if (checkBox6.Checked == true)
             {
@@ -84,6 +89,7 @@ namespace Helpdesk
                 pictureBox6.BackColor = Color.Empty;
                 checkBox6.Enabled = false;
                 comboBox6.Enabled = false;
+                comboBox18.Enabled = false;
             }
             if (checkBox7.Checked == true)
             {
@@ -93,6 +99,7 @@ namespace Helpdesk
                 pictureBox7.BackColor = Color.Empty;
                 checkBox7.Enabled = false;
                 comboBox7.Enabled = false;
+                comboBox19.Enabled = false;
             }
             if (checkBox8.Checked == true)
             {
@@ -102,6 +109,7 @@ namespace Helpdesk
                 pictureBox8.BackColor = Color.Empty;
                 checkBox8.Enabled = false;
                 comboBox8.Enabled = false;
+                comboBox20.Enabled = false;
             }
             if (checkBox9.Checked == true)
             {
@@ -111,6 +119,7 @@ namespace Helpdesk
                 pictureBox9.BackColor = Color.Empty;
                 checkBox9.Enabled = false;
                 comboBox9.Enabled = false;
+                comboBox21.Enabled = false;
             }
             if (checkBox10.Checked == true)
             {
@@ -120,6 +129,7 @@ namespace Helpdesk
                 pictureBox10.BackColor = Color.Empty;
                 checkBox10.Enabled = false;
                 comboBox10.Enabled = false;
+                comboBox22.Enabled = false;
             }
             if (checkBox11.Checked == true)
             {
@@ -129,6 +139,7 @@ namespace Helpdesk
                 pictureBox11.BackColor = Color.Empty;
                 checkBox11.Enabled = false;
                 comboBox11.Enabled = false;
+                comboBox23.Enabled = false;
             }
             if (checkBox12.Checked == true)
             {
@@ -138,6 +149,7 @@ namespace Helpdesk
                 pictureBox12.BackColor = Color.Empty;
                 checkBox12.Enabled = false;
                 comboBox12.Enabled = false;
+                comboBox24.Enabled = false;
             }
         }
 
@@ -151,6 +163,7 @@ namespace Helpdesk
                 comboBox2.Visible = true;
                 checkBox2.Visible = true;
                 pictureBox2.Visible = true;
+                comboBox14.Visible = true;
             }
             if (CLICK_COUNTER == 2)
             {
@@ -158,6 +171,7 @@ namespace Helpdesk
                 comboBox3.Visible = true;
                 checkBox3.Visible = true;
                 pictureBox3.Visible = true;
+                comboBox15.Visible = true;
             }
             if (CLICK_COUNTER == 3)
             {
@@ -165,6 +179,7 @@ namespace Helpdesk
                 comboBox4.Visible = true;
                 checkBox4.Visible = true;
                 pictureBox4.Visible = true;
+                comboBox16.Visible = true;
             }
             if (CLICK_COUNTER == 4)
             {
@@ -172,6 +187,7 @@ namespace Helpdesk
                 comboBox5.Visible = true;
                 checkBox5.Visible = true;
                 pictureBox5.Visible = true;
+                comboBox17.Visible = true;
             }
             if (CLICK_COUNTER == 5)
             {
@@ -179,6 +195,7 @@ namespace Helpdesk
                 comboBox6.Visible = true;
                 checkBox6.Visible = true;
                 pictureBox6.Visible = true;
+                comboBox18.Visible = true;
             }
             if (CLICK_COUNTER == 6)
             {
@@ -186,6 +203,7 @@ namespace Helpdesk
                 comboBox7.Visible = true;
                 checkBox7.Visible = true;
                 pictureBox7.Visible = true;
+                comboBox19.Visible = true;
             }
             if (CLICK_COUNTER == 7)
             {
@@ -193,6 +211,7 @@ namespace Helpdesk
                 comboBox8.Visible = true;
                 checkBox8.Visible = true;
                 pictureBox8.Visible = true;
+                comboBox20.Visible = true;
             }
             if (CLICK_COUNTER == 8)
             {
@@ -200,6 +219,7 @@ namespace Helpdesk
                 comboBox9.Visible = true;
                 checkBox9.Visible = true;
                 pictureBox9.Visible = true;
+                comboBox21.Visible = true;
             }
             if (CLICK_COUNTER == 9)
             {
@@ -207,6 +227,7 @@ namespace Helpdesk
                 comboBox10.Visible = true;
                 checkBox10.Visible = true;
                 pictureBox10.Visible = true;
+                comboBox22.Visible = true;
             }
             if (CLICK_COUNTER == 10)
             {
@@ -214,6 +235,7 @@ namespace Helpdesk
                 comboBox11.Visible = true;
                 checkBox11.Visible = true;
                 pictureBox11.Visible = true;
+                comboBox23.Visible = true;
             }
             if (CLICK_COUNTER == 11)
             {
@@ -222,6 +244,7 @@ namespace Helpdesk
                 checkBox12.Visible = true;
                 pictureBox12.Visible = true;
                 add_button.Enabled = false;
+                comboBox24.Visible = true;
             }
         }
 
@@ -301,18 +324,21 @@ namespace Helpdesk
         {
             checkBox1.Enabled = true;
             comboBox1.Enabled = true;
+            comboBox13.Enabled = true;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             checkBox2.Enabled = true;
             comboBox2.Enabled = true;
+            comboBox14.Enabled = true;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             checkBox3.Enabled = true;
             comboBox3.Enabled = true;
+            comboBox15.Enabled = true;
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -360,6 +386,7 @@ namespace Helpdesk
         {
             checkBox4.Enabled = true;
             comboBox4.Enabled = true;
+            comboBox16.Enabled = true;
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
@@ -402,6 +429,7 @@ namespace Helpdesk
         {
             checkBox5.Enabled = true;
             comboBox5.Enabled = true;
+            comboBox17.Enabled = true;
         }
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
@@ -444,6 +472,7 @@ namespace Helpdesk
         {
             checkBox6.Enabled = true;
             comboBox6.Enabled = true;
+            comboBox18.Enabled = true;
         }
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
@@ -486,6 +515,7 @@ namespace Helpdesk
         {
             checkBox7.Enabled = true;
             comboBox7.Enabled = true;
+            comboBox19.Enabled = true;
         }
 
         private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
@@ -528,6 +558,7 @@ namespace Helpdesk
         {
             checkBox8.Enabled = true;
             comboBox8.Enabled = true;
+            comboBox20.Enabled = true;
         }
 
         private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
@@ -570,6 +601,7 @@ namespace Helpdesk
         {
             checkBox9.Enabled = true;
             comboBox9.Enabled = true;
+            comboBox21.Enabled = true;
         }
 
         private void comboBox9_SelectedIndexChanged(object sender, EventArgs e)
@@ -612,6 +644,7 @@ namespace Helpdesk
         {
             checkBox10.Enabled = true;
             comboBox10.Enabled = true;
+            comboBox22.Enabled = true;
         }
 
         private void comboBox10_SelectedIndexChanged(object sender, EventArgs e)
@@ -654,6 +687,7 @@ namespace Helpdesk
         {
             checkBox11.Enabled = true;
             comboBox11.Enabled = true;
+            comboBox23.Enabled = true;
         }
 
         private void comboBox11_SelectedIndexChanged(object sender, EventArgs e)
@@ -696,6 +730,7 @@ namespace Helpdesk
         {
             checkBox12.Enabled = true;
             comboBox12.Enabled = true;
+            comboBox24.Enabled = true;
         }
 
         private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
