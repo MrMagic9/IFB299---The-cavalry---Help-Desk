@@ -89,16 +89,16 @@
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -767,6 +767,8 @@
             // 
             // comboBox13
             // 
+            this.comboBox13.DropDownWidth = 220;
+            this.comboBox13.Enabled = false;
             this.comboBox13.FormattingEnabled = true;
             this.comboBox13.Items.AddRange(new object[] {
             "Bill\'s Carpentry",
@@ -799,6 +801,8 @@
             // 
             // comboBox14
             // 
+            this.comboBox14.DropDownWidth = 220;
+            this.comboBox14.Enabled = false;
             this.comboBox14.FormattingEnabled = true;
             this.comboBox14.Items.AddRange(new object[] {
             "Bill\'s Carpentry",
@@ -828,41 +832,12 @@
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(121, 21);
             this.comboBox14.TabIndex = 70;
-            // 
-            // comboBox15
-            // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
-            "Bill\'s Carpentry",
-            "Bill\'s Carpets",
-            "Fallon Electrical, Plumbing & Air Conditioning",
-            "Platinum Electricians",
-            "Sunelec",
-            "Bevan Robinson Electrical Services",
-            "Algester Electrical",
-            "Spot on Electrical",
-            "FIXZIT Plumbing & Electrical",
-            "Eazy Flooring",
-            "Green Gardening",
-            "Allstrong Locksmiths & Security",
-            "Golden Locksmiths",
-            "Retro Security",
-            "Secure Locksmiths",
-            "Plumbworks",
-            "Express Plumbing Solutions",
-            "Total Roof Tilers",
-            "Fast Technicians",
-            "Tilerworks",
-            "Windows & Glass Professionals",
-            "Cracked Window Specialists",
-            "Express Window Repair"});
-            this.comboBox15.Location = new System.Drawing.Point(415, 161);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(121, 21);
-            this.comboBox15.TabIndex = 72;
+            this.comboBox14.Visible = false;
             // 
             // comboBox16
             // 
+            this.comboBox16.DropDownWidth = 220;
+            this.comboBox16.Enabled = false;
             this.comboBox16.FormattingEnabled = true;
             this.comboBox16.Items.AddRange(new object[] {
             "Bill\'s Carpentry",
@@ -888,15 +863,18 @@
             "Windows & Glass Professionals",
             "Cracked Window Specialists",
             "Express Window Repair"});
-            this.comboBox16.Location = new System.Drawing.Point(416, 133);
+            this.comboBox16.Location = new System.Drawing.Point(415, 161);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(121, 21);
-            this.comboBox16.TabIndex = 71;
+            this.comboBox16.TabIndex = 72;
+            this.comboBox16.Visible = false;
             // 
-            // comboBox17
+            // comboBox15
             // 
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Items.AddRange(new object[] {
+            this.comboBox15.DropDownWidth = 220;
+            this.comboBox15.Enabled = false;
+            this.comboBox15.FormattingEnabled = true;
+            this.comboBox15.Items.AddRange(new object[] {
             "Bill\'s Carpentry",
             "Bill\'s Carpets",
             "Fallon Electrical, Plumbing & Air Conditioning",
@@ -920,77 +898,16 @@
             "Windows & Glass Professionals",
             "Cracked Window Specialists",
             "Express Window Repair"});
-            this.comboBox17.Location = new System.Drawing.Point(415, 266);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(121, 21);
-            this.comboBox17.TabIndex = 76;
-            // 
-            // comboBox18
-            // 
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Items.AddRange(new object[] {
-            "Bill\'s Carpentry",
-            "Bill\'s Carpets",
-            "Fallon Electrical, Plumbing & Air Conditioning",
-            "Platinum Electricians",
-            "Sunelec",
-            "Bevan Robinson Electrical Services",
-            "Algester Electrical",
-            "Spot on Electrical",
-            "FIXZIT Plumbing & Electrical",
-            "Eazy Flooring",
-            "Green Gardening",
-            "Allstrong Locksmiths & Security",
-            "Golden Locksmiths",
-            "Retro Security",
-            "Secure Locksmiths",
-            "Plumbworks",
-            "Express Plumbing Solutions",
-            "Total Roof Tilers",
-            "Fast Technicians",
-            "Tilerworks",
-            "Windows & Glass Professionals",
-            "Cracked Window Specialists",
-            "Express Window Repair"});
-            this.comboBox18.Location = new System.Drawing.Point(415, 242);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(121, 21);
-            this.comboBox18.TabIndex = 75;
-            // 
-            // comboBox19
-            // 
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Items.AddRange(new object[] {
-            "Bill\'s Carpentry",
-            "Bill\'s Carpets",
-            "Fallon Electrical, Plumbing & Air Conditioning",
-            "Platinum Electricians",
-            "Sunelec",
-            "Bevan Robinson Electrical Services",
-            "Algester Electrical",
-            "Spot on Electrical",
-            "FIXZIT Plumbing & Electrical",
-            "Eazy Flooring",
-            "Green Gardening",
-            "Allstrong Locksmiths & Security",
-            "Golden Locksmiths",
-            "Retro Security",
-            "Secure Locksmiths",
-            "Plumbworks",
-            "Express Plumbing Solutions",
-            "Total Roof Tilers",
-            "Fast Technicians",
-            "Tilerworks",
-            "Windows & Glass Professionals",
-            "Cracked Window Specialists",
-            "Express Window Repair"});
-            this.comboBox19.Location = new System.Drawing.Point(414, 215);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(121, 21);
-            this.comboBox19.TabIndex = 74;
+            this.comboBox15.Location = new System.Drawing.Point(416, 133);
+            this.comboBox15.Name = "comboBox15";
+            this.comboBox15.Size = new System.Drawing.Size(121, 21);
+            this.comboBox15.TabIndex = 71;
+            this.comboBox15.Visible = false;
             // 
             // comboBox20
             // 
+            this.comboBox20.DropDownWidth = 220;
+            this.comboBox20.Enabled = false;
             this.comboBox20.FormattingEnabled = true;
             this.comboBox20.Items.AddRange(new object[] {
             "Bill\'s Carpentry",
@@ -1016,15 +933,18 @@
             "Windows & Glass Professionals",
             "Cracked Window Specialists",
             "Express Window Repair"});
-            this.comboBox20.Location = new System.Drawing.Point(415, 187);
+            this.comboBox20.Location = new System.Drawing.Point(415, 266);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(121, 21);
-            this.comboBox20.TabIndex = 73;
+            this.comboBox20.TabIndex = 76;
+            this.comboBox20.Visible = false;
             // 
-            // comboBox21
+            // comboBox19
             // 
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Items.AddRange(new object[] {
+            this.comboBox19.DropDownWidth = 220;
+            this.comboBox19.Enabled = false;
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Items.AddRange(new object[] {
             "Bill\'s Carpentry",
             "Bill\'s Carpets",
             "Fallon Electrical, Plumbing & Air Conditioning",
@@ -1048,15 +968,18 @@
             "Windows & Glass Professionals",
             "Cracked Window Specialists",
             "Express Window Repair"});
-            this.comboBox21.Location = new System.Drawing.Point(415, 371);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(121, 21);
-            this.comboBox21.TabIndex = 80;
+            this.comboBox19.Location = new System.Drawing.Point(415, 242);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(121, 21);
+            this.comboBox19.TabIndex = 75;
+            this.comboBox19.Visible = false;
             // 
-            // comboBox22
+            // comboBox18
             // 
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Items.AddRange(new object[] {
+            this.comboBox18.DropDownWidth = 220;
+            this.comboBox18.Enabled = false;
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Items.AddRange(new object[] {
             "Bill\'s Carpentry",
             "Bill\'s Carpets",
             "Fallon Electrical, Plumbing & Air Conditioning",
@@ -1080,15 +1003,18 @@
             "Windows & Glass Professionals",
             "Cracked Window Specialists",
             "Express Window Repair"});
-            this.comboBox22.Location = new System.Drawing.Point(415, 347);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(121, 21);
-            this.comboBox22.TabIndex = 79;
+            this.comboBox18.Location = new System.Drawing.Point(414, 215);
+            this.comboBox18.Name = "comboBox18";
+            this.comboBox18.Size = new System.Drawing.Size(121, 21);
+            this.comboBox18.TabIndex = 74;
+            this.comboBox18.Visible = false;
             // 
-            // comboBox23
+            // comboBox17
             // 
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Items.AddRange(new object[] {
+            this.comboBox17.DropDownWidth = 220;
+            this.comboBox17.Enabled = false;
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Items.AddRange(new object[] {
             "Bill\'s Carpentry",
             "Bill\'s Carpets",
             "Fallon Electrical, Plumbing & Air Conditioning",
@@ -1112,13 +1038,16 @@
             "Windows & Glass Professionals",
             "Cracked Window Specialists",
             "Express Window Repair"});
-            this.comboBox23.Location = new System.Drawing.Point(414, 320);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(121, 21);
-            this.comboBox23.TabIndex = 78;
+            this.comboBox17.Location = new System.Drawing.Point(415, 187);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(121, 21);
+            this.comboBox17.TabIndex = 73;
+            this.comboBox17.Visible = false;
             // 
             // comboBox24
             // 
+            this.comboBox24.DropDownWidth = 220;
+            this.comboBox24.Enabled = false;
             this.comboBox24.FormattingEnabled = true;
             this.comboBox24.Items.AddRange(new object[] {
             "Bill\'s Carpentry",
@@ -1144,10 +1073,116 @@
             "Windows & Glass Professionals",
             "Cracked Window Specialists",
             "Express Window Repair"});
-            this.comboBox24.Location = new System.Drawing.Point(415, 292);
+            this.comboBox24.Location = new System.Drawing.Point(415, 371);
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.Size = new System.Drawing.Size(121, 21);
-            this.comboBox24.TabIndex = 77;
+            this.comboBox24.TabIndex = 80;
+            this.comboBox24.Visible = false;
+            // 
+            // comboBox23
+            // 
+            this.comboBox23.DropDownWidth = 220;
+            this.comboBox23.Enabled = false;
+            this.comboBox23.FormattingEnabled = true;
+            this.comboBox23.Items.AddRange(new object[] {
+            "Bill\'s Carpentry",
+            "Bill\'s Carpets",
+            "Fallon Electrical, Plumbing & Air Conditioning",
+            "Platinum Electricians",
+            "Sunelec",
+            "Bevan Robinson Electrical Services",
+            "Algester Electrical",
+            "Spot on Electrical",
+            "FIXZIT Plumbing & Electrical",
+            "Eazy Flooring",
+            "Green Gardening",
+            "Allstrong Locksmiths & Security",
+            "Golden Locksmiths",
+            "Retro Security",
+            "Secure Locksmiths",
+            "Plumbworks",
+            "Express Plumbing Solutions",
+            "Total Roof Tilers",
+            "Fast Technicians",
+            "Tilerworks",
+            "Windows & Glass Professionals",
+            "Cracked Window Specialists",
+            "Express Window Repair"});
+            this.comboBox23.Location = new System.Drawing.Point(415, 347);
+            this.comboBox23.Name = "comboBox23";
+            this.comboBox23.Size = new System.Drawing.Size(121, 21);
+            this.comboBox23.TabIndex = 79;
+            this.comboBox23.Visible = false;
+            // 
+            // comboBox22
+            // 
+            this.comboBox22.DropDownWidth = 220;
+            this.comboBox22.Enabled = false;
+            this.comboBox22.FormattingEnabled = true;
+            this.comboBox22.Items.AddRange(new object[] {
+            "Bill\'s Carpentry",
+            "Bill\'s Carpets",
+            "Fallon Electrical, Plumbing & Air Conditioning",
+            "Platinum Electricians",
+            "Sunelec",
+            "Bevan Robinson Electrical Services",
+            "Algester Electrical",
+            "Spot on Electrical",
+            "FIXZIT Plumbing & Electrical",
+            "Eazy Flooring",
+            "Green Gardening",
+            "Allstrong Locksmiths & Security",
+            "Golden Locksmiths",
+            "Retro Security",
+            "Secure Locksmiths",
+            "Plumbworks",
+            "Express Plumbing Solutions",
+            "Total Roof Tilers",
+            "Fast Technicians",
+            "Tilerworks",
+            "Windows & Glass Professionals",
+            "Cracked Window Specialists",
+            "Express Window Repair"});
+            this.comboBox22.Location = new System.Drawing.Point(414, 320);
+            this.comboBox22.Name = "comboBox22";
+            this.comboBox22.Size = new System.Drawing.Size(121, 21);
+            this.comboBox22.TabIndex = 78;
+            this.comboBox22.Visible = false;
+            // 
+            // comboBox21
+            // 
+            this.comboBox21.DropDownWidth = 220;
+            this.comboBox21.Enabled = false;
+            this.comboBox21.FormattingEnabled = true;
+            this.comboBox21.Items.AddRange(new object[] {
+            "Bill\'s Carpentry",
+            "Bill\'s Carpets",
+            "Fallon Electrical, Plumbing & Air Conditioning",
+            "Platinum Electricians",
+            "Sunelec",
+            "Bevan Robinson Electrical Services",
+            "Algester Electrical",
+            "Spot on Electrical",
+            "FIXZIT Plumbing & Electrical",
+            "Eazy Flooring",
+            "Green Gardening",
+            "Allstrong Locksmiths & Security",
+            "Golden Locksmiths",
+            "Retro Security",
+            "Secure Locksmiths",
+            "Plumbworks",
+            "Express Plumbing Solutions",
+            "Total Roof Tilers",
+            "Fast Technicians",
+            "Tilerworks",
+            "Windows & Glass Professionals",
+            "Cracked Window Specialists",
+            "Express Window Repair"});
+            this.comboBox21.Location = new System.Drawing.Point(415, 292);
+            this.comboBox21.Name = "comboBox21";
+            this.comboBox21.Size = new System.Drawing.Size(121, 21);
+            this.comboBox21.TabIndex = 77;
+            this.comboBox21.Visible = false;
             // 
             // label1
             // 
@@ -1184,16 +1219,16 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox21);
-            this.Controls.Add(this.comboBox22);
-            this.Controls.Add(this.comboBox23);
             this.Controls.Add(this.comboBox24);
-            this.Controls.Add(this.comboBox17);
-            this.Controls.Add(this.comboBox18);
-            this.Controls.Add(this.comboBox19);
+            this.Controls.Add(this.comboBox23);
+            this.Controls.Add(this.comboBox22);
+            this.Controls.Add(this.comboBox21);
             this.Controls.Add(this.comboBox20);
-            this.Controls.Add(this.comboBox15);
+            this.Controls.Add(this.comboBox19);
+            this.Controls.Add(this.comboBox18);
+            this.Controls.Add(this.comboBox17);
             this.Controls.Add(this.comboBox16);
+            this.Controls.Add(this.comboBox15);
             this.Controls.Add(this.comboBox14);
             this.Controls.Add(this.comboBox13);
             this.Controls.Add(this.textBox12);
@@ -1332,16 +1367,16 @@
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.ComboBox comboBox13;
         private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox15;
         private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox comboBox15;
         private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.ComboBox comboBox17;
         private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox comboBox22;
+        private System.Windows.Forms.ComboBox comboBox21;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
