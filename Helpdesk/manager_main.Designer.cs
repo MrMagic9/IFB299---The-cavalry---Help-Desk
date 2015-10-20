@@ -34,6 +34,7 @@
             this.tasks_button = new System.Windows.Forms.Button();
             this.providers_button = new System.Windows.Forms.Button();
             this.volunteers_button = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             // forum_button
             // 
             this.forum_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forum_button.Location = new System.Drawing.Point(196, 339);
+            this.forum_button.Location = new System.Drawing.Point(196, 371);
             this.forum_button.Name = "forum_button";
             this.forum_button.Size = new System.Drawing.Size(129, 55);
             this.forum_button.TabIndex = 14;
@@ -69,7 +70,7 @@
             // tasks_button
             // 
             this.tasks_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tasks_button.Location = new System.Drawing.Point(196, 77);
+            this.tasks_button.Location = new System.Drawing.Point(196, 39);
             this.tasks_button.Name = "tasks_button";
             this.tasks_button.Size = new System.Drawing.Size(129, 55);
             this.tasks_button.TabIndex = 13;
@@ -80,7 +81,7 @@
             // providers_button
             // 
             this.providers_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.providers_button.Location = new System.Drawing.Point(196, 250);
+            this.providers_button.Location = new System.Drawing.Point(196, 286);
             this.providers_button.Name = "providers_button";
             this.providers_button.Size = new System.Drawing.Size(129, 55);
             this.providers_button.TabIndex = 12;
@@ -91,7 +92,7 @@
             // volunteers_button
             // 
             this.volunteers_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.volunteers_button.Location = new System.Drawing.Point(196, 162);
+            this.volunteers_button.Location = new System.Drawing.Point(196, 120);
             this.volunteers_button.Name = "volunteers_button";
             this.volunteers_button.Size = new System.Drawing.Size(129, 55);
             this.volunteers_button.TabIndex = 15;
@@ -99,11 +100,23 @@
             this.volunteers_button.UseVisualStyleBackColor = true;
             this.volunteers_button.Click += new System.EventHandler(this.volunteers_button_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(196, 201);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 55);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Feedback";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // manager_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 473);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.volunteers_button);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.forum_button);
@@ -126,5 +139,6 @@
         private System.Windows.Forms.Button tasks_button;
         private System.Windows.Forms.Button providers_button;
         private System.Windows.Forms.Button volunteers_button;
+        private System.Windows.Forms.Button button1;
     }
 }
