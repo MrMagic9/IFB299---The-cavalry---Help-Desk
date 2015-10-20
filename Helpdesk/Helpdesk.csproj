@@ -72,6 +72,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="feedback_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feedback_form.Designer.cs">
+      <DependentUpon>feedback_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="forum_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="volunteers_details.Designer.cs">
       <DependentUpon>volunteers_details.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="feedback_form.resx">
+      <DependentUpon>feedback_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forum_form.resx">
       <DependentUpon>forum_form.cs</DependentUpon>
     </EmbeddedResource>

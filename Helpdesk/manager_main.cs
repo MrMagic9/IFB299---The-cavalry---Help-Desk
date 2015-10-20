@@ -42,5 +42,10 @@ namespace Helpdesk
         {
             new volunteers_details().Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new feedback_form().Show();
+        }
     }
 }
